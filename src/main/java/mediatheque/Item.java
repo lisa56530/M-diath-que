@@ -20,5 +20,10 @@ public abstract class Item {
 	public String toString() {
 		return title;
 	}
+
+	public MediathequeVisitor mediatheque ; 
+	public MediathequeVisitor accetp (MediathequeVisitor mediatheque) { 
+		return mediatheque ; 
+	}	
 	
 }
