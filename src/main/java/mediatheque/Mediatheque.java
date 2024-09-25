@@ -10,8 +10,26 @@ public class Mediatheque {
 		items.add(i);
 	}
 	
-	public MediathequeVisitor accetp (MediathequeVisitor mediatheque) { 
-		return mediatheque ; 
-	}	
+	public void printOnlyBooks() {
+		printOnlyBook printBookVisitor = new printOnlyBook();
+        for (Item item : items) {
+            item.accept(printBookVisitor);
+        }
+	}
+
+	public void printOnlyCDs() {
+		printOnlyCDs printOnlyCDs = new printOnlyCDs() ; 
+        for (Item item : items) {
+            item.accept(printOnlyCDs) ;
+        }
+	}
+
+	public void printCatalog() {
+        for (Item i : items)
+            i.print();
+    }
+
 	
+
+
 }

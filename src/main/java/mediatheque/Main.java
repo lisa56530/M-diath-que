@@ -9,7 +9,7 @@ public class Main {
         mediatheque.addItem( new Book("Henri Charrière","Papillon"));
         mediatheque.addItem( new CD(11, "Open this wall"));
         mediatheque.printCatalog();
-        //mediatheque.printOnlyBooks();
-        //mediatheque.printOnlyCDs();
+        mediatheque.printOnlyBooks();
+        mediatheque.printOnlyCDs();
     }
 }

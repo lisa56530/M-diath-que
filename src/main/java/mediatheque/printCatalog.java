@@ -7,4 +7,6 @@ public class printCatalog implements MediathequeVisitor {
     public void visit(CD cd){
 
     } ; 
+
+    
 }

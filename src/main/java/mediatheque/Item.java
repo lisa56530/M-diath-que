@@ -21,9 +21,6 @@ public abstract class Item {
 		return title;
 	}
 
-	public MediathequeVisitor mediatheque ; 
-	public MediathequeVisitor accetp (MediathequeVisitor mediatheque) { 
-		return mediatheque ; 
-	}	
 	
+	public abstract void accept(MediathequeVisitor visitor); 
 }

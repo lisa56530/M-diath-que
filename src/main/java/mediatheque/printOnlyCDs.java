@@ -7,7 +7,5 @@ public class printOnlyCDs implements MediathequeVisitor{
     public void visit(CD cd){
 		
 	} ; 
-    public void printOnlyCDs() {
-		throw new UnsupportedOperationException("Not supported yet."); 
-	}
+    
 }
